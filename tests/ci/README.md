@@ -1,0 +1,1 @@
+Put tests here that are to run within CI/CD on desktop and mobile browsers.
