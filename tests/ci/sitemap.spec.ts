@@ -1,7 +1,7 @@
-const { test, expect } = require('@playwright/test');
-const AxeBuilder = require('@axe-core/playwright').default;
-const fs = require('fs');
-const { parse } = require('fsp-xml-parser');
+var { test, expect } = require('@playwright/test');
+var AxeBuilder = require('@axe-core/playwright').default;
+var fs = require('fs');
+var { parse } = require('fsp-xml-parser');
 
 // Parse the XML file into a Urlset object
 const siteMapPath = "/opt/playwright/sitemap.xml"
