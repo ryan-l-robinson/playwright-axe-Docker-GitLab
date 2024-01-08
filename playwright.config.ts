@@ -12,8 +12,8 @@ export default defineConfig({
         viewport: { width: 1920, height: 1080 },
         ignoreHTTPSErrors: true
       },
-      testMatch: ['tests/*.spec.js', 'tests/*.spec.ts', 'tests/ci/*.spec.js', 'tests/ci/*.spec.ts'],
-      testIgnore: ['tests/local/*', 'tests/local/mobile/*', 'tests/mobile/*'],
+      testMatch: ['tests/*.spec.js', 'tests/*.spec.ts', 'tests/ci/*.spec.js', 'tests/ci/*.spec.ts', 'tests/desktop/*.spec.ts', 'tests/desktop/*.spec.js'],
+      testIgnore: ['tests/local/*', 'tests/ci/mobile/*', 'tests/mobile/*'],
     },
     {
         name: 'iPhone_X_Light',
@@ -23,7 +23,7 @@ export default defineConfig({
           ignoreHTTPSErrors: true,
         },
       testMatch: ['tests/*.spec.js', 'tests/*.spec.ts', 'tests/ci/*.spec.js', 'tests/ci/*.spec.ts', 'tests/ci/mobile/*.spec.js', 'tests/ci/mobile/*.spec.ts', 'tests/mobile/*.spec.js', 'tests/mobile/*.spec.ts'],
-      testIgnore: ['tests/local/*'],
+      testIgnore: ['tests/local/*','tests/desktop/*','tests/ci/desktop/*'],
     },
     {
       name: 'Pixel_7_Dark',
@@ -33,7 +33,7 @@ export default defineConfig({
         ignoreHTTPSErrors: true,
       },
       testMatch: ['tests/*.spec.js', 'tests/*.spec.ts', 'tests/ci/*.spec.js', 'tests/ci/*.spec.ts', 'tests/ci/mobile/*.spec.js', 'tests/ci/mobile/*.spec.ts', 'tests/mobile/*.spec.js', 'tests/mobile/*.spec.ts'],
-      testIgnore: ['tests/local/*'],
+      testIgnore: ['tests/local/*','tests/desktop/*','tests/ci/desktop/*'],
     },
   ],
 });
