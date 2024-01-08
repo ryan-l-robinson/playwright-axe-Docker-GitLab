@@ -9,6 +9,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Firefox'],
         browserName: 'firefox',
+        viewport: { width: 1920, height: 1080 },
         ignoreHTTPSErrors: true
       },
       testMatch: ['tests/*.spec.js', 'tests/*.spec.ts', 'tests/ci/*.spec.js', 'tests/ci/*.spec.ts'],
