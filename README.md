@@ -1,4 +1,6 @@
-# playwright-axe-Docker-GitLab
+# Overview
+
+This project is now archived, as I migrated it to [my GitLab](https://gitlab.com/ryan-l-robinson/playwright-axe-Docker-GitLab) instead. It makes more sense there where I can actually test it.
 
 This project builds a testing image with playwright and axe-core accessibility testing, and stores it in the GitLab container registry. This avoids building it every time the job is invoked.
 
